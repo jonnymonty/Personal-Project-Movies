@@ -1,5 +1,5 @@
 // Initial Values
-const MOVIE_DB_API = '';
+const MOVIE_DB_API = keyOne;
 const MOVIE_DB_ENDPOINT = 'https://api.themoviedb.org';
 const MOVIE_DB_IMAGE_ENDPOINT = 'https://image.tmdb.org/t/p/w500';
 const MOVIE_DB_FULL_IMAGE_ENDPOINT = 'https://image.tmdb.org/t/p/original';
