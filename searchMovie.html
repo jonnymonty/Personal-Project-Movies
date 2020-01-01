@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Cineplex</title>
@@ -15,43 +15,18 @@
 
 <body>
     <div class="nav">
-        <a class="cineplexIcon" onclick="scrollTopAnimated(1)"><h1>Cineplex</h1></a>
+        <a class="cineplexIcon" onclick="goHome()"><h1>Cineplex</h1></a>
         <div class="searchContainer">
-            <input type="text" class="homeSearchBox" id="homeSearchText" placeholder="Search..." />
-            <button type="submit" class="btn" id="homeSearch"><i class="fas fa-search"></i></button>
             <input type="text" class="searchBox" id="searchText" placeholder="Search..." />
             <button type="submit" class="btn" id="search"><i class="fas fa-search"></i></button>
+            <input type="text" class="homeSearchBox" id="homeSearchText" placeholder="Search..." />
+            <button type="submit" class="btn" id="homeSearch"><i class="fas fa-search"></i></button>
         </div>
     </div>
-    <div class="container" id="header">
-        <i class="fas fa-chevron-left prev"></i>
-        <i class="fas fa-chevron-right next"></i>
-        <div class="headerPlaceholder">
-            <!-- Movies Autofill Here From Database -->
-        </div>
-    </div>
-    <div class="discoverMovies">
-        <div class="upcoming discoverableMovies">
-            <h1>Upcoming</h1>
-            <i class="fas fa-chevron-left upcomingPrev"></i>
-            <i class="fas fa-chevron-right upcomingNext"></i>
-            <div class="upcomingPlaceholder">
-                <!-- Movies Autofill Here From Database -->
-            </div>
-        </div>
-        <div class="popular discoverableMovies">
-            <h1>Popular</h1>
-            <i class="fas fa-chevron-left popularPrev"></i>
-            <i class="fas fa-chevron-right popularNext"></i>
-            <div class="popularPlaceholder">
-                <!-- Movies Autofill Here From Database -->
-            </div>
-        </div>
-        <div class="topRated discoverableMovies">
-            <h1>Top Rated</h1>
-            <i class="fas fa-chevron-left topRatedPrev"></i>
-            <i class="fas fa-chevron-right topRatedNext"></i>
-            <div class="topRatedPlaceholder">
+    <div class="container">
+        <div class="searchResultsContainer" id="header">
+            <h1 class="searchTitle"></h1>
+            <div class="searchPlaceholder">
                 <!-- Movies Autofill Here From Database -->
             </div>
         </div>
@@ -82,10 +57,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="js/scripts.js"></script>
     <script src="js/apiTransaction.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/loadmovies.js"></script>
+    <script src="js/seachApp.js"></script>
 </body>
 
 </html>

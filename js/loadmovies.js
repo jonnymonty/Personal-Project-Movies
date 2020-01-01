@@ -1,0 +1,4 @@
+searchNowPlayingMovies();
+searchUpcomingMovies();
+searchPopularMovies();
+searchTopRatedMovies();
