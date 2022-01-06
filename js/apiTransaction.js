@@ -329,7 +329,7 @@ function createMovieTrailerContainer(trailers) {
     i = 0;
     const thelist = trailers.map((trailer) => {
         if (i < 2) {
-            const innercode = `<iframe src="http://www.youtube.com/embed/${trailer.key}" width="560" height="315" frameborder="0"
+            const innercode = `<iframe src="https://www.youtube.com/embed/${trailer.key}" width="560" height="315" frameborder="0"
             allowfullscreen></iframe>`;
             movieElement.innerHTML += innercode;
             i++;
